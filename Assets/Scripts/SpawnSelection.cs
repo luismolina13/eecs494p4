@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SpawnSelection : MonoBehaviour {
 
+	public Transform character;
+
 	float warrior = 50.0f;
 	float golem = 53.5f;
 	float archer = 46.50f;
@@ -32,18 +34,25 @@ public class SpawnSelection : MonoBehaviour {
 		case 0:
 			transform.position = new Vector3 (golem, transform.position.y, transform.position.z);
 			if(key_enter) {
-				//selectCharacter("Golem");
+				Instantiate (character);
+				Object.Destroy(this.gameObject);
 			}
 				//Application.LoadLevel(1);
 			break;
 		case 1:
 			transform.position = new Vector3 (warrior, transform.position.y, transform.position.z);
-			if(key_enter) {}
+			if(key_enter) {
+				Instantiate (character);
+				Object.Destroy(this.gameObject);
+			}
 				//Application.LoadLevel(1);				
 			break;
 		case 2:
 			transform.position = new Vector3 (archer, transform.position.y, transform.position.z);
-			if(key_enter) {}
+			if(key_enter) {
+				Instantiate (character);
+				Object.Destroy(this.gameObject);
+			}
 				//Application.LoadLevel(1);
 			break;
 		}	
