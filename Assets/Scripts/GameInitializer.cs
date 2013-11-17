@@ -7,7 +7,7 @@ public class GameInitializer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Instantiate (SpawnMenu);
+		//Instantiate (SpawnMenu);
 	}
 	
 	// Update is called once per frame

@@ -5,13 +5,27 @@ public class SpawnSelection : MonoBehaviour {
 
 	public Transform character;
 
-	float warrior = 50.0f;
-	float golem = 53.5f;
-	float archer = 46.50f;
+	float warrior;
+	float golem;
+	float archer;
+
+	float x;
+	float y;
+	float z;
 	
 	// 0 golem, 1 warrior, 2 archer
 	int state = 0; 
 	const int num_options = 3;
+
+	void Start () {
+		warrior = transform.parent.transform.position.x + 0.0f;
+		golem = transform.parent.transform.position.x + 3.5f;
+		archer = transform.parent.transform.position.x - 3.5f;
+
+		x = transform.parent.transform.position.x;
+		y = transform.parent.transform.position.y - 5.0f;
+		z = transform.parent.transform.position.z + 2.3f;
+	}
 
 	void selectCharacter(string type) {
 
@@ -32,26 +46,27 @@ public class SpawnSelection : MonoBehaviour {
 			state = num_options - 1;
 		switch (state) {
 		case 0:
-			transform.position = new Vector3 (golem, transform.position.y, transform.position.z);
+			transform.position = new Vector3 (golem, y, z);
 			if(key_enter) {
-				Instantiate (character);
-				Object.Destroy(this.gameObject);
+				Instantiate (character, new Vector3(x,3.812794f,z), Quaternion.identity);
+				//player.GetComponent
+				Object.Destroy(transform.parent.gameObject);
 			}
 				//Application.LoadLevel(1);
 			break;
 		case 1:
-			transform.position = new Vector3 (warrior, transform.position.y, transform.position.z);
+			transform.position = new Vector3 (warrior, y , z);
 			if(key_enter) {
-				Instantiate (character);
-				Object.Destroy(this.gameObject);
+				Instantiate (character, new Vector3(x,3.812794f,z), Quaternion.identity);
+				Object.Destroy(transform.parent.gameObject);
 			}
 				//Application.LoadLevel(1);				
 			break;
 		case 2:
-			transform.position = new Vector3 (archer, transform.position.y, transform.position.z);
+			transform.position = new Vector3 (archer, y, z);
 			if(key_enter) {
-				Instantiate (character);
-				Object.Destroy(this.gameObject);
+				Instantiate (character, new Vector3(x,3.812794f,z), Quaternion.identity);
+				Object.Destroy(transform.parent.gameObject);
 			}
 				//Application.LoadLevel(1);
 			break;
