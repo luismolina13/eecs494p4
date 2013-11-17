@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "A\u0303\xABA\u0302\x94A\u0302\x94A\u0303\xADA\u0302\x93A\u0302\xA8A\u0303\xACA\u0302\xA6A\u0302\x88
-    A\u0303\xABA\u0302\xACA\u0302\xB4A\u0303\xAAA\u0302\xB8A\u0302\xB0A\u0303\xAAA\u0302\xB0A\u0302\x91A\u0303\xACA\u0302\xA3A\u0302\xBC
-    A\u0303\xACA\u0302\x95A\u0302\x8CA\u0303\xADA\u0302\x8CA\u0302\x8C"
+  m_Name: "\xC3\xAB\xC2\x94\xC2\x94\xC3\xAD\xC2\x93\xC2\xA8\xC3\xAC\xC2\xA6\xC2\x88
+    \xC3\xAB\xC2\xAC\xC2\xB4\xC3\xAA\xC2\xB8\xC2\xB0\xC3\xAA\xC2\xB0\xC2\x91\xC3\xAC\xC2\xA3\xC2\xBC
+    \xC3\xAC\xC2\x95\xC2\x8C\xC3\xAD\xC2\x8C\xC2\x8C"
   m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
