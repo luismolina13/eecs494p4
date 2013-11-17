@@ -1,4 +1,3 @@
-eecs494p4
-=========
+# eecs494p4
 
-Project 4. Unity Video Game
+## Project 4. Unity Video Game
