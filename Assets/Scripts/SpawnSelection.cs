@@ -50,7 +50,7 @@ public class SpawnSelection : MonoBehaviour {
 		case 0:
 			transform.position = new Vector3 (mage, y, z);
 			if(key_enter) {
-				Instantiate (warrior_prefab, new Vector3(x,3.812794f,z), Quaternion.identity);
+				Instantiate (mage_prefab, new Vector3(x,3.812794f,z), Quaternion.identity);
 				//player.GetComponent
 				Object.Destroy(transform.parent.gameObject);
 			}
@@ -67,7 +67,7 @@ public class SpawnSelection : MonoBehaviour {
 		case 2:
 			transform.position = new Vector3 (archer, y, z);
 			if(key_enter) {
-				Instantiate (warrior_prefab, new Vector3(x,3.812794f,z), Quaternion.identity);
+				Instantiate (archer_prefab, new Vector3(x,3.812794f,z), Quaternion.identity);
 				Object.Destroy(transform.parent.gameObject);
 			}
 				//Application.LoadLevel(1);
