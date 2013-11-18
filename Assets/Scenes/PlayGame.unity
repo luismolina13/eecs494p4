@@ -3119,7 +3119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63c96320a113e14d8be077cd2cef9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  warrior_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  mage_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  archer_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
 --- !u!54 &214114825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15135,7 +15137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63c96320a113e14d8be077cd2cef9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  warrior_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  mage_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  archer_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
 --- !u!54 &1067422097
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26525,7 +26529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63c96320a113e14d8be077cd2cef9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  warrior_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  mage_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  archer_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
 --- !u!54 &1903905949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29441,7 +29447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63c96320a113e14d8be077cd2cef9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  warrior_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  mage_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
+  archer_prefab: {fileID: 400000, guid: 5091ff159e45cbc46a870c72eb018fd6, type: 2}
 --- !u!54 &2109216140
 Rigidbody:
   m_ObjectHideFlags: 0

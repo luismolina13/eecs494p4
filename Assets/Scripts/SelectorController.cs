@@ -3,10 +3,10 @@ using System.Collections;
 
 public class SelectorController : MonoBehaviour {
 
-	float play_game = 7.80f;
-	float instructions = 2.75f;
-	float sandbox = -3.20f;
-	float quit = -8.78f;
+	float play_game = 1218.628f;//7.80f;
+	float instructions = 1213.764f;//2.75f;
+	float sandbox = 1208.076f;//-3.20f;
+	float quit = 1201.841f;//-8.78f;
 
 	// 0 playgame, 1 instructions, 2 sandbox, 3 quit
 	int state = 0; 
