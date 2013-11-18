@@ -8,6 +8,9 @@ public class SelectorController : MonoBehaviour {
 	float sandbox = 1208.076f;//-3.20f;
 	float quit = 1201.841f;//-8.78f;
 
+	bool key_up_released = false;
+	bool key_down_released = false;
+
 	// 0 playgame, 1 instructions, 2 sandbox, 3 quit
 	int state = 0; 
 	const int num_options = 4;
@@ -19,13 +22,26 @@ public class SelectorController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		bool key_up = Input.GetKeyDown (KeyCode.UpArrow);
-		bool key_down = Input.GetKeyUp (KeyCode.DownArrow);
-		bool key_enter = Input.GetKeyUp (KeyCode.Return);
-		if (key_up) 
+		bool key_up_pressed = Input.GetAxis ("L_YAxis_1") > .3;
+		if (Input.GetAxis ("L_YAxis_1") < .3) {
+			key_up_released = true;
+		}
+
+		bool key_down_pressed = Input.GetAxis ("L_YAxis_1") < -.3;
+		if (Input.GetAxis ("L_YAxis_1") > -.3) {
+			key_down_released = true;
+		}
+
+		bool key_enter = Input.GetButtonDown ("A_1");
+
+		if (key_up_pressed && key_up_released) {
 			state--;
-		if (key_down)
+			key_up_released = false;
+		}
+		if (key_down_pressed && key_down_released) {
 			state++;
+			key_down_released = false;
+		}
 		if (state >= num_options) 
 			state = 0;
 		if (state < 0)
