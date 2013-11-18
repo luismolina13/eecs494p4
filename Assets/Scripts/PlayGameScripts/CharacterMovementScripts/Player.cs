@@ -17,11 +17,18 @@ public class Player : MonoBehaviour
 
 	void Movement()
 	{
+		if ((Input.GetAxis ("L_YAxis_1") != 0 || Input.GetAxis ("L_XAxis_1") != 0) 
+		    && !attack)
+		{
+			animation.Play ("Walk");
+		} 
+
 		float z_pos = transform.position.z + Input.GetAxis ("L_YAxis_1") * moveSpeed * Time.deltaTime;
 		float x_pos = transform.position.x + Input.GetAxis ("L_XAxis_1") * moveSpeed * Time.deltaTime;
 		transform.position = new Vector3 (x_pos, 5, z_pos);
 		
-		if(Mathf.Abs (Input.GetAxis("R_XAxis_1")) > deadZone || Mathf.Abs(Input.GetAxis ("R_YAxis_1")) > deadZone)
+		if((Mathf.Abs (Input.GetAxis("R_XAxis_1")) > deadZone || Mathf.Abs(Input.GetAxis ("R_YAxis_1")) > deadZone)
+		   && !attack)
 		{
 			Vector3 temp_vec = new Vector3 (Input.GetAxis("R_XAxis_1") * 1000, 5, Input.GetAxis ("R_YAxis_1") * -1000);
 			transform.LookAt (temp_vec);
