@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
-var moveSpeed: float = 1.0;
-var turnSpeed: float = 1.0;
+var moveSpeed: float = 10.0;
+var turnSpeed: float = 40.0;
 
 function Update () {
 
