@@ -28,6 +28,7 @@ GameObject:
   - 92: {fileID: 9200000}
   - 81: {fileID: 8100000}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1381,7 +1382,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400182}
   - 111: {fileID: 11100000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: samuzai
   m_TagString: Untagged
@@ -1952,7 +1953,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100110}
-  m_LocalRotation: {x: .0100114169, y: .583720922, z: .535464704, w: .610284686}
+  m_LocalRotation: {x: .0100114159, y: .583720863, z: .535464644, w: .610284626}
   m_LocalPosition: {x: -.110882416, y: 9.53674295e-09, z: 1.52587887e-07}
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children:
@@ -2617,14 +2618,25 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc7757c3e92d8e41b24cc5d9ec20f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab62669b41f559a448a790bdda6da20c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5727665f20484e340849626d67abf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  turnSpeed: 40
+  moveSpeed: 8
+  deadZone: .699999988
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
