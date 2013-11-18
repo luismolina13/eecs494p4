@@ -17,11 +17,17 @@ public class Player : MonoBehaviour
 
 	void Movement()
 	{
-		if ((Input.GetAxis ("L_YAxis_1") != 0 || Input.GetAxis ("L_XAxis_1") != 0) 
-		    && !attack)
+		if (!attack) 
 		{
-			animation.Play ("Walk");
-		} 
+			if (Input.GetAxis ("L_YAxis_1") != 0 || Input.GetAxis ("L_XAxis_1") != 0)  
+			{
+				animation.Play ("Walk");
+			}
+			else
+			{
+				animation.Play ();
+			}
+		}
 
 		float z_pos = transform.position.z + Input.GetAxis ("L_YAxis_1") * moveSpeed * Time.deltaTime;
 		float x_pos = transform.position.x + Input.GetAxis ("L_XAxis_1") * moveSpeed * Time.deltaTime;
