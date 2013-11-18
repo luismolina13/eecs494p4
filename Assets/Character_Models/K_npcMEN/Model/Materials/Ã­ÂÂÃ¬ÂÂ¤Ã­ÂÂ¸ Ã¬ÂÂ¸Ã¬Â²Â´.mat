@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "\xC3\xAD\xC2\N\xC2\x8C\xC3\xAC\xC2\x8A\xC2\xA4\xC3\xAD\xC2\x8A\xC2\xB8
-    \xC3\xAC\xC2\x9D\xC2\xB8\xC3\xAC\xC2\xB2\xC2\xB4"
+  m_Name: "A\u0303\xADA\u0302\NA\u0302\x8CA\u0303\xACA\u0302\x8AA\u0302\xA4A\u0303\xADA\u0302\x8AA\u0302\xB8
+    A\u0303\xACA\u0302\x9DA\u0302\xB8A\u0303\xACA\u0302\xB2A\u0302\xB4"
   m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
